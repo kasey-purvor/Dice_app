@@ -1,4 +1,6 @@
 class Dice
+  attr_reader :score
+  
   def initialize
     @roles = []
     @score = 0
@@ -15,9 +17,5 @@ class Dice
     @score += arr.sum
     return arr 
   end 
-  
-  def score
-    @score
-  end
 end
 
